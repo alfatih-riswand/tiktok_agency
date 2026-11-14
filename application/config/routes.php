@@ -11,3 +11,4 @@ $route['legal'] = 'legal/index';
 $route['terms'] = 'legal/terms';
 $route['privacy'] = 'legal/privacy';
 $route['api/sync'] = 'integration/sync';
+$route['webhooks/tiktok'] = 'webhooks/tiktok';
