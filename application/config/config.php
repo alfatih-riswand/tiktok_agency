@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 $config['base_url'] = 'https://mis-helpdesk.rptech.co.id/tiktok_agency/';
-$config['index_page'] = '';
+$config['index_page'] = 'index.php';
 $config['uri_protocol'] = 'REQUEST_URI';
 $config['url_suffix'] = '';
 $config['language'] = 'english';
