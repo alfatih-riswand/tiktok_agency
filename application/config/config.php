@@ -1,6 +1,11 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-$config['base_url'] = 'https://mis-helpdesk.rptech.co.id/tiktok_agency/';
+$host = isset($_SERVER['HTTP_HOST']) ? strtolower($_SERVER['HTTP_HOST']) : '';
+if (strpos($host, 'localhost') !== false || strpos($host, '127.0.0.1') !== false) {
+    $config['base_url'] = 'http://localhost/tiktok_agency/';
+} else {
+    $config['base_url'] = 'https://mis-helpdesk.rptech.co.id/tiktok_agency/';
+}
 $config['index_page'] = 'index.php';
 $config['uri_protocol'] = 'REQUEST_URI';
 $config['url_suffix'] = '';
